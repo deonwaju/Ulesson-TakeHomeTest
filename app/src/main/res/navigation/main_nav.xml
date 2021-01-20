@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.example.ulesson.ui.dashboard.DashboardFragment"
+        android:name="com.deonolarewaju.ulesson.ui.home.HomeFragment"
         android:label="dashboard_fragment"
         tools:layout="@layout/dashboard_fragment">
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/subjectFragment"
-        android:name="com.example.ulesson.ui.subject.SubjectFragment"
+        android:name="com.deonolarewaju.ulesson.ui.subject.SubjectFragment"
         android:label="subject_fragment"
         tools:layout="@layout/subject_fragment">
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/videoPlayerFragment"
-        android:name="com.example.ulesson.ui.videoplayer.VideoPlayerFragment"
+        android:name="com.deonolarewaju.ulesson.ui.videoplayer.VideoPlayerFragment"
         android:label="video_player_fragment"
         tools:layout="@layout/video_player_fragment">
         <argument
