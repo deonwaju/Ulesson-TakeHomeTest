@@ -1,12 +1,13 @@
 # Ulesson-TakeHomeTest
 
 
-#ULesson test
+# ULesson test
+
 Access learning resources.
 Summary
 The app pulls subject/media content from uLesson API. It is built according to the Model-View-ViewModel(MVVM) architecture.
 
-#Architecture
+# Architecture
 The application follows clean architecture because of the benefits it brings to software which includes scalability, maintainability and testability. It enforces separation of concerns and dependency inversion, where higher and lower level layers all depend on abstractions. In the project, the layers are separated into different gradle modules namely:
 
 Domain
@@ -17,7 +18,7 @@ These modules are Kotlin modules except the cache module. The reason being that 
 
 For dependency injection and asynchronous programming, the project uses Dagger Hilt and Coroutines with Flow. Dagger Hilt is a fine abstraction over the vanilla dagger boilerplate, and is easy to setup. Coroutines and Flow brings kotlin's expressibility and conciseness to asynchronous programming, along with a fine suite of operators that make it a robust solution.
 
-#Presentation
+# Presentation
 As stated earlier, the presentation layer is implemented with MVI architecture. The project has a kotlin module called presentation which defines the contract that presenters should implement. The layer is also platform agnostic, making it easy to change implementation details (ViewModel, etc).
 
 MVI architecture has two main components - The model and the view, everything else is the data that flows between these two components. The view state comes from the Model and goes into the View for rendering. Intents come from the View and are consumed by the Model for processing. As a result, the data flow is unidirectional.
@@ -31,10 +32,10 @@ MVI is a good architecture to use when you don't want any surprises in user expe
 State rendering
 For each screen, there is a sealed class of View state, View intent and results. It's also possible to want to render multiple view states in one screen, leading to the use of view components. View components are reusable UI components that extend a viewGroup, which knows how to render its own view state and send intents. For example, the dashboard screen has two components - SubjectsView and RecentTopicsView. The DashboardFragment then passes state to these components to render on the screen. It also takes intents from the components to process. These views encapsulate logic for rendering success, error and empty states. The data for the views are fetched concurrently, allowing any of the views to render whenever its data is available. It also allows the user to retry the data fetch for each individual component if it fails. The state for each of view is decoupled from one another and is cached in a Flow persisted in the Fragment's Viewmodel.
 
-#Domain
+# Domain
 The domain layer contains the app business logic. It defines contracts for data operations and domain models to be used in the app. All other layers have their own representation of these domain models, and Mapper classes (or adapters) are used to transform the domain models to each layer's domain model representation. Usecases which represent a single unit of business logic are also defined in the domain layer, and are consumed by the presentation layer. Writing mappers and models can take a lot of effort and result in boilerplate, but they make the codebase much more maintainable and robust by separating concerns.
 
-#Data
+# Data
 The Data layer implements the contract for providing data defined in the domain layer, and it in turn provides a contract that will be used to fetch data from the remote and cache data sources. We have two data sources - Remote and Cache. Remote relies on Retrofit library to fetch data from the uLesson.com REST api, while the cache layer uses Room library to persist the search history.
 
 Features
@@ -63,7 +64,7 @@ Kotlin Gradle DSL
 License
 This project is released under the Apache License 2.0. See LICENSE for details.
 
-Copyright 2020 Zizoh James Anto. All rights reserved.
+Copyright 2020 Damola Olarewaju All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
