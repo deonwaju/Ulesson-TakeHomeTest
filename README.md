@@ -3,9 +3,36 @@
 
 # ULesson test
 
+First we take you through the UI.
+
+# Welcome Screen
+
+![WhatsApp Image 2021-01-20 at 20 10 42](https://user-images.githubusercontent.com/54560535/105226031-ba446f80-5b5f-11eb-9f31-2fa4656bd3b6.jpeg)
+
+# Subject Screens
+
+![WhatsApp Image 2021-01-20 at 20 10 41 (3)](https://user-images.githubusercontent.com/54560535/105226121-dba55b80-5b5f-11eb-9d76-f40b9f75fa29.jpeg)
+
+# Play video screen
+
+![WhatsApp Image 2021-01-20 at 20 10 41](https://user-images.githubusercontent.com/54560535/105226142-e2cc6980-5b5f-11eb-8636-6707f82f7c65.jpeg)
+
+On return to welcome screen, there are recently played videos in the recently played area, first set at a limit of two.
+
+![WhatsApp Image 2021-01-20 at 20 10 39](https://user-images.githubusercontent.com/54560535/105226396-3939a800-5b60-11eb-9552-b41b954f8ef0.jpeg)
+
+Then on the user clicking the expand button, the user can see more recently played videos
+
+
+![WhatsApp Image 2021-01-20 at 20 10 40 (1)](https://user-images.githubusercontent.com/54560535/105226544-67b78300-5b60-11eb-935e-99ce506524ae.jpeg)
+
+
+
+
 Access learning resources.
 Summary
-The app pulls subject/media content from uLesson API. It is built according to the Model-View-ViewModel(MVVM) architecture.
+The app pulls subject/media content from uLesson API. It is built according to the Model-View-ViewModel(MVVM) architecture. Implementing the Google Room database,
+retrofit for API calls.
 
 # Architecture
 The application follows clean architecture because of the benefits it brings to software which includes scalability, maintainability and testability. It enforces separation of concerns and dependency inversion, where higher and lower level layers all depend on abstractions. In the project, the layers are separated into different gradle modules namely:
