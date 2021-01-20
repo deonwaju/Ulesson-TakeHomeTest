@@ -66,7 +66,7 @@ The domain layer contains the app business logic. It defines contracts for data 
 The Data layer implements the contract for providing data defined in the domain layer, and it in turn provides a contract that will be used to fetch data from the remote and cache data sources. We have two data sources - Remote and Cache. Remote relies on Retrofit library to fetch data from the uLesson.com REST api, while the cache layer uses Room library to persist the search history.
 
 Features
-Clean Architecture with MVI (Uni-directional data flow)
+Clean Architecture with MVVM (Uni-directional data flow)
 Kotlin Coroutines with Flow
 Dagger Hilt
 Kotlin Gradle DSL
