@@ -34,7 +34,11 @@ Then on the user clicking the expand button, the user can see more recently play
 
 ![WhatsApp Image 2021-01-20 at 20 10 40 (1)](https://user-images.githubusercontent.com/54560535/105226544-67b78300-5b60-11eb-935e-99ce506524ae.jpeg)
 
-
+# DataBase
+In this project, there are two tables present in the Room database, the first table is used to store the subjects as it is fetched from the API endpoint,
+the second table contains subjects that where recently viewed by the user. 
+  Furthermore, Because the home page has a collapseable button that first sets a limit of two recently viewed subject topics, there is a limit of two 
+  set to the recently viewed subject topics, until the user chooses to click the expandable button.  
 
 * Room: The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
 * Navigation component: a library that manages and eases fragment transactions
