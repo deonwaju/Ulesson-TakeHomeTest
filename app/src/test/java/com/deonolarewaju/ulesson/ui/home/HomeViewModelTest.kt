@@ -1,9 +1,9 @@
 package com.deonolarewaju.ulesson.ui.home
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.deonolarewaju.ulesson.data.DummyRepository
+import com.deonolarewaju.ulesson.repository.DummyRepository
 import com.deonolarewaju.ulesson.util.Resources
-import com.deonolarewaju.ulesson.util.MainCoroutineRule
+import com.deonolarewaju.ulesson.util.CoroutineRule
 import com.deonolarewaju.ulesson.util.TestObjectUtil
 import com.deonolarewaju.ulesson.util.getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -22,7 +22,7 @@ class HomeViewModelTest {
     var instantTaskExecutorRule = InstantTaskExecutorRule()
 
     @get:Rule
-    var mainCoroutine = MainCoroutineRule()
+    var mainCoroutine = CoroutineRule()
 
     private lateinit var viewModel: HomeViewModel
 

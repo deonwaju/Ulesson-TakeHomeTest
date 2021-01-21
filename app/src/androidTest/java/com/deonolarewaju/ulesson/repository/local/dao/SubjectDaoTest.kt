@@ -1,7 +1,8 @@
-package com.deonolarewaju.ulesson.data.source.local
+package com.deonolarewaju.ulesson.repository.local.dao
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SmallTest
+import com.deonolarewaju.ulesson.repository.local.ProjectDatabaseSetup
 import com.deonolarewaju.ulesson.util.TestObjectUtil
 import com.deonolarewaju.ulesson.util.getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi

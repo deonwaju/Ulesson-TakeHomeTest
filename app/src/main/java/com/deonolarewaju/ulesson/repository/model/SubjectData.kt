@@ -1,4 +1,4 @@
-package com.deonolarewaju.ulesson.data.model
+package com.deonolarewaju.ulesson.repository.model
 
 import androidx.room.Entity
 import androidx.room.Ignore

@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.deonolarewaju.ulesson.R
-import com.deonolarewaju.ulesson.data.model.Lesson
+import com.deonolarewaju.ulesson.repository.model.Lesson
 import com.deonolarewaju.ulesson.ui.subject.SubjectViewModel
 import com.deonolarewaju.ulesson.util.loadImage
 import kotlinx.android.synthetic.main.lesson_item.view.*

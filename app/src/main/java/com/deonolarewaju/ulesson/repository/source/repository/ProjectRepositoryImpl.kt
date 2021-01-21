@@ -1,13 +1,13 @@
-package com.deonolarewaju.ulesson.data.source.repository
+package com.deonolarewaju.ulesson.repository.source.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import com.deonolarewaju.ulesson.util.Resources
 import com.deonolarewaju.ulesson.util.Resources.*
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
-import com.deonolarewaju.ulesson.data.model.Subject
-import com.deonolarewaju.ulesson.data.local.SubjectLocalDataSource
-import com.deonolarewaju.ulesson.data.remote.APIRemoteDataSource
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
+import com.deonolarewaju.ulesson.repository.model.Subject
+import com.deonolarewaju.ulesson.repository.local.SubjectLocalDataSource
+import com.deonolarewaju.ulesson.repository.remote.APIRemoteDataSource
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 

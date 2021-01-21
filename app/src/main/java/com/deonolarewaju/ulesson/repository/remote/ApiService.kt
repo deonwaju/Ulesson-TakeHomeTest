@@ -1,6 +1,6 @@
-package com.deonolarewaju.ulesson.data.remote
+package com.deonolarewaju.ulesson.repository.remote
 
-import com.deonolarewaju.ulesson.data.model.SubjectDataResponse
+import com.deonolarewaju.ulesson.repository.model.SubjectDataResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

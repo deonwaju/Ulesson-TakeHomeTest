@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.deonolarewaju.ulesson.R
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
 import kotlinx.android.synthetic.main.recent_view_item.view.*
 
 class RecentViewAdapter :

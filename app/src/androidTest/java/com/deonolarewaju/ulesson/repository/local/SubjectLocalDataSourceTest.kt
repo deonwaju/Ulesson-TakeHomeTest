@@ -1,4 +1,4 @@
-package com.deonolarewaju.ulesson.data.source.local
+package com.deonolarewaju.ulesson.repository.local
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
@@ -6,8 +6,7 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import com.deonolarewaju.ulesson.util.Resources
-import com.deonolarewaju.ulesson.data.local.ULessonDatabase
-import com.deonolarewaju.ulesson.data.source.impl.SubjectLocalDataSourceImpl
+import com.deonolarewaju.ulesson.repository.source.impl.SubjectLocalDataSourceImpl
 import com.deonolarewaju.ulesson.util.TestObjectUtil
 import com.deonolarewaju.ulesson.util.getOrAwaitValue
 import kotlinx.coroutines.Dispatchers
@@ -24,7 +23,7 @@ import org.junit.runner.RunWith
 @ExperimentalCoroutinesApi
 @RunWith(AndroidJUnit4::class)
 @MediumTest
-class LocalDataSourceTest {
+class SubjectLocalDataSourceTest {
     private lateinit var localDataSource: SubjectLocalDataSourceImpl
     private lateinit var database: ULessonDatabase
 

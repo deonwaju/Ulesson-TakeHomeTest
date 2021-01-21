@@ -1,6 +1,6 @@
 package com.deonolarewaju.ulesson.util
 
-import com.deonolarewaju.ulesson.data.model.*
+import com.deonolarewaju.ulesson.repository.model.*
 
 object TestObjectUtil {
     val lessons = listOf(

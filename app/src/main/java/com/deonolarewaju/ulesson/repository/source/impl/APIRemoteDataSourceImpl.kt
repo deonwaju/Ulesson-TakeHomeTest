@@ -1,9 +1,9 @@
-package com.deonolarewaju.ulesson.data.source.impl
+package com.deonolarewaju.ulesson.repository.source.impl
 
 import com.deonolarewaju.ulesson.util.Resources
-import com.deonolarewaju.ulesson.data.model.SubjectDataResponse
-import com.deonolarewaju.ulesson.data.remote.APIRemoteDataSource
-import com.deonolarewaju.ulesson.data.remote.ApiService
+import com.deonolarewaju.ulesson.repository.model.SubjectDataResponse
+import com.deonolarewaju.ulesson.repository.remote.APIRemoteDataSource
+import com.deonolarewaju.ulesson.repository.remote.ApiService
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

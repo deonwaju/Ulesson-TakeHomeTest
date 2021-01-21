@@ -1,9 +1,9 @@
-package com.deonolarewaju.ulesson.data.source.repository
+package com.deonolarewaju.ulesson.repository.source.repository
 
 import androidx.lifecycle.LiveData
 import com.deonolarewaju.ulesson.util.Resources
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
-import com.deonolarewaju.ulesson.data.model.Subject
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
+import com.deonolarewaju.ulesson.repository.model.Subject
 
 interface Repository {
 

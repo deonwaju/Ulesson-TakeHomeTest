@@ -1,11 +1,10 @@
-package com.deonolarewaju.ulesson.data.source.local
+package com.deonolarewaju.ulesson.repository.local
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider.getApplicationContext
-import com.deonolarewaju.ulesson.data.local.ULessonDatabase
-import com.deonolarewaju.ulesson.data.local.dao.RecentlyViewedDao
-import com.deonolarewaju.ulesson.data.local.dao.SubjectDao
+import com.deonolarewaju.ulesson.repository.local.dao.RecentlyViewedDao
+import com.deonolarewaju.ulesson.repository.local.dao.SubjectDao
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule

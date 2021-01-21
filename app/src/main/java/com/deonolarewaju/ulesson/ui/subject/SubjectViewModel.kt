@@ -7,10 +7,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import com.deonolarewaju.ulesson.util.Event
 import com.deonolarewaju.ulesson.util.Resources
-import com.deonolarewaju.ulesson.data.model.Lesson
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
-import com.deonolarewaju.ulesson.data.model.Subject
-import com.deonolarewaju.ulesson.data.source.repository.Repository
+import com.deonolarewaju.ulesson.repository.model.Lesson
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
+import com.deonolarewaju.ulesson.repository.model.Subject
+import com.deonolarewaju.ulesson.repository.source.repository.Repository
 
 class SubjectViewModel @ViewModelInject constructor(
     private val repository: Repository

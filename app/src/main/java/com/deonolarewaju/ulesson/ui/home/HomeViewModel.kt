@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import com.deonolarewaju.ulesson.util.Event
-import com.deonolarewaju.ulesson.data.source.repository.Repository
+import com.deonolarewaju.ulesson.repository.source.repository.Repository
 
 class HomeViewModel @ViewModelInject constructor(
     private val repository: Repository

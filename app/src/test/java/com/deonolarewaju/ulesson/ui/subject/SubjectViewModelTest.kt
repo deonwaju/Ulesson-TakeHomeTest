@@ -2,11 +2,11 @@ package com.deonolarewaju.ulesson.ui.subject
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import com.deonolarewaju.ulesson.data.DummyRepository
+import com.deonolarewaju.ulesson.repository.DummyRepository
 import com.deonolarewaju.ulesson.util.Event
 import com.deonolarewaju.ulesson.util.Resources
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
-import com.deonolarewaju.ulesson.util.MainCoroutineRule
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
+import com.deonolarewaju.ulesson.util.CoroutineRule
 import com.deonolarewaju.ulesson.util.TestObjectUtil
 import com.deonolarewaju.ulesson.util.getOrAwaitValue
 import com.deonolarewaju.ulesson.util.mock
@@ -27,7 +27,7 @@ class SubjectViewModelTest {
     var instantTaskExecutorRule = InstantTaskExecutorRule()
 
     @get:Rule
-    var mainCoroutineRule = MainCoroutineRule()
+    var mainCoroutineRule = CoroutineRule()
 
     private lateinit var viewModel: SubjectViewModel
 

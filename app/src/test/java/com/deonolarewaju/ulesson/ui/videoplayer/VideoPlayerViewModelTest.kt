@@ -1,9 +1,9 @@
 package com.deonolarewaju.ulesson.ui.videoplayer
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.deonolarewaju.ulesson.data.DummyRepository
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
-import com.deonolarewaju.ulesson.util.MainCoroutineRule
+import com.deonolarewaju.ulesson.repository.DummyRepository
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
+import com.deonolarewaju.ulesson.util.CoroutineRule
 import com.deonolarewaju.ulesson.util.TestObjectUtil
 import com.deonolarewaju.ulesson.util.getOrAwaitValue
 import junit.framework.Assert.assertTrue
@@ -23,7 +23,7 @@ class VideoPlayerViewModelTest {
     var instantTaskExecutorRule = InstantTaskExecutorRule()
 
     @get:Rule
-    var mainCoroutineRule = MainCoroutineRule()
+    var mainCoroutineRule = CoroutineRule()
 
     private val repository = DummyRepository()
 

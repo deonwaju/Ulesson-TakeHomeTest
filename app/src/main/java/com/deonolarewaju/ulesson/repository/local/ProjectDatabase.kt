@@ -1,12 +1,12 @@
-package com.deonolarewaju.ulesson.data.local
+package com.deonolarewaju.ulesson.repository.local
 
 import android.content.Context
 import androidx.room.*
-import com.deonolarewaju.ulesson.data.model.Chapter
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
-import com.deonolarewaju.ulesson.data.model.Subject
-import com.deonolarewaju.ulesson.data.local.dao.RecentlyViewedDao
-import com.deonolarewaju.ulesson.data.local.dao.SubjectDao
+import com.deonolarewaju.ulesson.repository.model.Chapter
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
+import com.deonolarewaju.ulesson.repository.model.Subject
+import com.deonolarewaju.ulesson.repository.local.dao.RecentlyViewedDao
+import com.deonolarewaju.ulesson.repository.local.dao.SubjectDao
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 

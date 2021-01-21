@@ -7,7 +7,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.deonolarewaju.ulesson.R
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
 import com.deonolarewaju.ulesson.ui.BaseFragment
 import com.google.android.exoplayer2.*
 import com.google.android.exoplayer2.source.MediaSource

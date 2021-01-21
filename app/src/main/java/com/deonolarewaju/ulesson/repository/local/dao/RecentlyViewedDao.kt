@@ -1,11 +1,11 @@
-package com.deonolarewaju.ulesson.data.local.dao
+package com.deonolarewaju.ulesson.repository.local.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
 
 @Dao
 interface RecentlyViewedDao {

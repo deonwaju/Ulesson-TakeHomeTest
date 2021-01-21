@@ -1,14 +1,14 @@
-package com.deonolarewaju.ulesson.data
+package com.deonolarewaju.ulesson.repository
 
 import android.os.Build
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import com.deonolarewaju.ulesson.util.Resources
-import com.deonolarewaju.ulesson.data.model.RecentlyViewed
-import com.deonolarewaju.ulesson.data.model.Subject
-import com.deonolarewaju.ulesson.data.local.SubjectLocalDataSource
-import com.deonolarewaju.ulesson.data.remote.APIRemoteDataSource
-import com.deonolarewaju.ulesson.data.source.repository.ProjectRepositoryImpl
+import com.deonolarewaju.ulesson.repository.model.RecentlyViewed
+import com.deonolarewaju.ulesson.repository.model.Subject
+import com.deonolarewaju.ulesson.repository.local.SubjectLocalDataSource
+import com.deonolarewaju.ulesson.repository.remote.APIRemoteDataSource
+import com.deonolarewaju.ulesson.repository.source.repository.ProjectRepositoryImpl
 import com.deonolarewaju.ulesson.util.*
 import com.nhaarman.mockitokotlin2.argumentCaptor
 import kotlinx.coroutines.Dispatchers
@@ -30,7 +30,7 @@ import org.robolectric.annotation.Config
 class RepositoryTest {
 
     @get:Rule
-    var mainCoroutineRule = MainCoroutineRule()
+    var mainCoroutineRule = CoroutineRule()
 
     @get:Rule
     var instantTaskExecutorRule = InstantTaskExecutorRule()

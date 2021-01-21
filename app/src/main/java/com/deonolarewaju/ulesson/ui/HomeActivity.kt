@@ -1,7 +1,8 @@
-package com.deonolarewaju.ulesson
+package com.deonolarewaju.ulesson.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.deonolarewaju.ulesson.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
