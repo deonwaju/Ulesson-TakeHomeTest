@@ -35,21 +35,11 @@ Then on the user clicking the expand button, the user can see more recently play
 ![WhatsApp Image 2021-01-20 at 20 10 40 (1)](https://user-images.githubusercontent.com/54560535/105226544-67b78300-5b60-11eb-935e-99ce506524ae.jpeg)
 
 # DataBase
+
 In this project, there are two tables present in the Room database, the first table is used to store the subjects as it is fetched from the API endpoint,
 the second table contains subjects that where recently viewed by the user. 
   Furthermore, Because the home page has a collapseable button that first sets a limit of two recently viewed subject topics, there is a limit of two 
   set to the recently viewed subject topics, until the user chooses to click the expandable button.  
-
-* Room: The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
-* Navigation component: a library that manages and eases fragment transactions
-* Hilt: for dependency injection
-* LiveData: An observable data holder class consumed by the layout to display ui data
-* ViewModel: a class that housed UI-related data
-* Retrofit: for making network request
-* Coroutine: recommended way to make execute asynchronous code, main safe!, and eliminates call back hell code
-* Timber: used for logging
-* Glide: a library for loading images
-* Exoplayer : library used for playing videos
 
 
 
@@ -59,18 +49,39 @@ The app pulls subject/media content from uLesson API. It is built according to t
 retrofit for API calls.
 
 # Architecture
-The application follows clean architecture because of the benefits it brings to software which includes scalability, maintainability and testability. It enforces separation of concerns and dependency inversion, where higher and lower level layers all depend on abstractions. In the project, the layers are separated into different gradle modules namely:
+The application follows clean architecture because of the benefits it brings to software which includes scalability, maintainability and testability. It enforces separation of concerns and dependency inversion, where higher and lower level layers all depend on abstractions. In the project, the layers are separated into:
 
 
 These modules are Kotlin modules except the cache module. The reason being that the low level layers need to be independent of the Android framework. One of the key points of clean architecture is that low level layers should be platform agnostic. As a result, the domain, data and presentation layers can be plugged into a kotlin multiplatform project for example, and it will run just fine because we don't depend on the android framework. The cache and remote layers are implementation details that can be provided in any form (Firebase, GraphQl server, REST, ROOM, SQLDelight, etc) as long as it conforms to the business rules / contracts defined in the data layer which in turn also conforms to contracts defined in domain. The project has one feature module dashboard that holds the UI code and presents data to the users. The main app module does nothing more than just tying all the layers of our app together.
 
 For dependency injection and asynchronous programming, the project uses Dagger Hilt and Coroutines with Flow. Dagger Hilt is a fine abstraction over the vanilla dagger boilerplate, and is easy to setup. Coroutines and Flow brings kotlin's expressibility and conciseness to asynchronous programming, along with a fine suite of operators that make it a robust solution.
 
-Features
-Clean Architecture with MVVM (Uni-directional data flow)
-Kotlin Coroutines with Flow
-Dagger Hilt
-Kotlin Gradle DSL
+# Features
+Display recently watched videos on home screen along with subjects using multiple view types in a Recyclerview using Recyclerview ConcatAdapter
+Cache network response using Room for better user experience (Offline-first)
+Simplify background processes using Kotlin coroutines
+Watch videos using Exoplayer
+
+# Libraries 
+
+Room: The Room persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
+Android Navigation component: a library that allows easily flow of movement between screens(fragments)
+Retrofit: anetwork request library
+Kotlin Coroutines with Flow: Kotlin way to write asynchronous code.
+Timber: a logging library
+Glide: a library for loading images
+Exoplayer : This library is used for playin media(videos)
+DaggerHilt: for dependency injection
+LiveData: An observable data holder class consumed by the layout to display ui data
+ViewModel: an architecture class used to store and manage UI data.
+
+
+
+# Get started
+
+Clone the repository using git clone https://github.com/DeonWaju/Ulesson-TakeHomeTest in your desired IDE
+
+
 Prerequisite
 To build this project, you require:
 
@@ -91,6 +102,12 @@ To build this project, you require:
                 Kotlin Gradle DSL
                 License
                 This project is released under the Apache License 2.0. See LICENSE for details.
+                
+# Todo
+
+Complete Ui tests.
+Complete project following clean architectural principal.
+
 
 Copyright 2020 Damola Olarewaju All rights reserved.
 
