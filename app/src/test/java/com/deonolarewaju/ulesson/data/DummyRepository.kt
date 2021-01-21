@@ -24,7 +24,6 @@ class DummyRepository : Repository {
         shouldReturnError = value
     }
 
-    //network call to fetch subjects from the server
     override fun fetchSubjects(): LiveData<Resources<Unit>> {
         return liveData {
             val response = if (shouldReturnError) {
